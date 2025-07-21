@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav container">
+        <div class="logo">Simarpreet Singh</div>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button class="mobile-toggle" id="mobileToggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <div class="hero-greeting">Hello, I'm</div>
+              <h1 class="hero-title">Simarpreet Singh</h1>
+              <h2 class="hero-subtitle" id="typed-subtitle">
+                Full Stack Developer
+              </h2>
+              <p class="hero-description">
+                I create beautiful, responsive web applications with modern
+                technologies. Passionate about clean code, user experience, and
+                bringing ideas to life.
+              </p>
+              <div class="cta-buttons">
+                <a href="#portfolio" class="btn btn-primary">
+                  <i class="fas fa-eye"></i>
+                  View My Work
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                  <i class="fas fa-envelope"></i>
+                  Get In Touch
+                </a>
+              </div>
+            </div>
+            <div class="profile-section">
+              <img
+                src="Simar.jpg"
+                alt="Simarpreet Singh"
+                class="profile-image clean-box"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Get to know me better</p>
+          <div class="about-layout">
+            <!-- Left Side: Square Profile & Stats -->
+            <div class="about-left">
+              <div class="about-image-box">
+                <img
+                  src="Simar 2.JPG"
+                  alt="Simarpreet Singh"
+                  class="about-square-image"
+                />
+              </div>
+
+              <div class="stats">
+                <div class="stat-card">
+                  <div class="stat-number">1+</div>
+                  <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-number">03+</div>
+                  <div class="stat-label">Completed certifications</div>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-number">02+</div>
+                  <div class="stat-label">Internships Completed</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Side: About Text -->
+            <div class="about-right">
+              <p class="about-text">
+                I’m a passionate and dedicated Full Stack Developer who loves
+                bringing ideas to life through clean, functional, and
+                user-centered design. My work is rooted in the belief that
+                technology should not only work well but also feel great to use.
+                With a strong command of technologies like React, Node.js,
+                Express, and MongoDB, I craft responsive and scalable
+                applications that solve real-world problems.I enjoy the full
+                journey of development — from brainstorming product ideas to
+                writing scalable code and delivering seamless user experiences.
+               
+              </p>
+              <p class="about-text">
+                Beyond coding, I’m constantly learning and exploring new trends
+                in the tech world. I actively seek out opportunities to work on
+                innovative projects, collaborate with talented teams, and keep
+                sharpening my problem-solving mindset. I'm also passionate about
+                open-source, cloud technologies, and building tools that help
+                people and businesses grow online.
+              </p>
+
+              <a href="Simarpreet Resume 2.0.pdf" class="btn btn-primary">
+                <i class="fas fa-download"></i>
+                Download Resume
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="skills"
+        class="section"
+        style="background: var(--bg-secondary)"
+      >
+        <div class="container">
+          <h2 class="section-title">Skills & Qualifications</h2>
+          <p class="section-subtitle">
+            My technical expertise and qualifications
+          </p>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h3><i class="fas fa-code"></i> Frontend Development</h3>
+              <div class="skill-item">
+                <div class="skill-name">
+                  <span>React.js</span>
+                  <span>95%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="95%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">
+                  <span>JavaScript/TypeScript</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">
+                  <span>HTML/CSS</span>
+                  <span>98%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="98%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">
+                  <span>FIGMA</span>
+                  <span>92%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="92%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3><i class="fas fa-server"></i> Backend Development</h3>
+              <div class="skill-item">
+                <div class="skill-name">
+                  <span>Node.js</span>
+                  <span>88%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="88%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">
+                  <span>Python</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">
+                  <span>Database (MongoDB/SQL)</span>
+                  <span>82%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="82%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">
+                  <span>Express.js</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="80%"></div>
+                </div>
+              </div>
+            </div>
+           <div class="skill-category" >
+  <h3><i class="fas fa-graduation-cap"></i> Qualifications</h3>
+
+  <div class="qualification-tabs">
+    <button class="tab-btn active" data-tab="education">
+      <i class="fas fa-graduation-cap"></i> Education
+    </button>
+    <button class="tab-btn" data-tab="work">
+      <i class="fas fa-briefcase"></i> Work
+    </button>
+  </div>
+
+  <div class="qualification-content" id="education">
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-info">
+          <div class="qualification-title">B.Tech Computer Science</div>
+          <div class="qualification-institution">I.G.P.T.U – Kapurthala</div>
+          <div class="qualification-year">2022 – 2026</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-info">
+          <div class="qualification-title">Python Workshop</div>
+          <div class="qualification-institution">Let’s Upgrade – Online</div>
+          <div class="qualification-year">2025</div>
+        </div>
+      <!-- <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-info">
+          <div class="qualification-title">Python Workshop</div>
+          <div class="qualification-institution">Let’s Upgrade – Online</div>
+          <div class="qualification-year">2025</div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="qualification-content hidden" id="work">
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-info">
+          <div class="qualification-title">Trainee Front-End Developer</div>
+          <div class="qualification-institution">Ryaz.io – Ludhiana</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-info">
+          <div class="qualification-title">Full Stack Developer</div>
+          <div class="qualification-institution">Novem Control –Mohali</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </section>
+
+      <section id="services" class="section">
+        <div class="container">
+          <h2 class="section-title">Services</h2>
+          <p class="section-subtitle">What I can do for you</p>
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <h3 class="service-title">Web Development</h3>
+              <p class="service-description">
+                Custom web applications built with modern technologies like
+                React, Node.js, and cloud platforms for scalable solutions.
+              </p>
+            </div>
+            <!-- <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h3 class="service-title">Mobile Development</h3>
+              <p class="service-description">
+                Cross-platform mobile applications using React Native and
+                Flutter for iOS and Android platforms.
+              </p>
+            </div> -->
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <h3 class="service-title">UI/UX Design</h3>
+              <p class="service-description">
+                User-centered design solutions that combine aesthetics with
+                functionality to create engaging digital experiences.
+              </p>
+            </div>
+            <!-- <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-cloud"></i>
+              </div>
+              <h3 class="service-title">Cloud Solutions</h3>
+              <p class="service-description">
+                Cloud architecture and deployment using AWS, Azure, and Google
+                Cloud for scalable and reliable applications.
+              </p>
+            </div> -->
+            <!-- <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-search"></i>
+              </div>
+              <h3 class="service-title">SEO Optimization</h3>
+              <p class="service-description">
+                Search engine optimization and performance improvements to
+                increase visibility and user engagement.
+              </p>
+            </div> -->
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-cog"></i>
+              </div>
+              <h3 class="service-title">Maintenance & Support</h3>
+              <p class="service-description">
+                Ongoing maintenance, updates, and technical support to keep your
+                applications running smoothly.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="portfolio"
+        class="section"
+        style="background: var(--bg-secondary)"
+      >
+        <div class="container">
+          <h2 class="section-title">Portfolio</h2>
+          <p class="section-subtitle">My recent work and projects</p>
+
+          <div class="portfolio-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web Apps</button>
+            <button class="filter-btn" data-filter="design">Design</button>
+          </div>
+
+          <div class="portfolio-grid">
+            <div class="portfolio-item" data-category="web">
+              <div class="portfolio-image"><img src="https://private-user-images.githubusercontent.com/176656629/468262314-489bf3df-09af-4351-ad25-070317e13c3e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTMwOTExODcsIm5iZiI6MTc1MzA5MDg4NywicGF0aCI6Ii8xNzY2NTY2MjkvNDY4MjYyMzE0LTQ4OWJmM2RmLTA5YWYtNDM1MS1hZDI1LTA3MDMxN2UxM2MzZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNzIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDcyMVQwOTQxMjdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05MjZmZjFkNGYzZDI2OTc0YWQ2NzI3YjVhMzA5NTliZGE4MTU3YzFmNjYxNjkzNDA3N2RiM2NjZDI3YzQyN2QxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.Z-i_XGBzNODAL3R1A9kNivZ-7-XW_VrF2VlHthAveAE" alt="" srcset=""></div>
+              <div class="portfolio-content">
+                <h3 class="portfolio-title">Netflix Clone</h3>
+                <p class="portfolio-description">
+                    Netflix-inspired landing page is a responsive, pixel-perfect recreation of the official Netflix homepage.
+                </p>
+                &nbsp
+                <div class="portfolio-tags">
+                  <span class="portfolio-tag">HTML</span>
+                  <span class="portfolio-tag">CSS</span>
+                  <span class="portfolio-tag">JavaScript</span>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item" data-category="web">
+              <div class="portfolio-image"><img src="https://private-user-images.githubusercontent.com/176656629/468274555-7e6da4fe-a02e-46f3-9700-d0a3f2ba3522.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTMwOTE2ODUsIm5iZiI6MTc1MzA5MTM4NSwicGF0aCI6Ii8xNzY2NTY2MjkvNDY4Mjc0NTU1LTdlNmRhNGZlLWEwMmUtNDZmMy05NzAwLWQwYTNmMmJhMzUyMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNzIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDcyMVQwOTQ5NDVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mN2FkOTM3YTcxY2MwMmNmNTBlNzllMGI2NjgxMjMxNzYwYjIwN2U3ODQxNzMzMTQ5ZGYyZDM2NzFjMDJiOWI3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.ICyS3maNPUH8i4CeqX5hUk4FZgW1JxmAuIfW1DH6dRo" alt="" srcset=""></div>
+              <div class="portfolio-content">
+                <h3 class="portfolio-title">Rubic Cube Game</h3>
+                <p class="portfolio-description">
+                  3D Rubik’s Cube simulator built to demonstrate the power of WebGL and Three.js
+                </p>
+                &nbsp
+                <div class="portfolio-tags">
+                  <span class="portfolio-tag">HTML</span>
+                  <span class="portfolio-tag">CSS</span>
+                  <span class="portfolio-tag">JavaScript</span>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item" data-category="web">
+              <div class="portfolio-image"><img src="https://private-user-images.githubusercontent.com/176656629/468272821-158c67bd-f7fc-48bf-825c-9b9937258e2d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTMwOTI4NTksIm5iZiI6MTc1MzA5MjU1OSwicGF0aCI6Ii8xNzY2NTY2MjkvNDY4MjcyODIxLTE1OGM2N2JkLWY3ZmMtNDhiZi04MjVjLTliOTkzNzI1OGUyZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNzIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDcyMVQxMDA5MTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05NWQ0OWFlM2ZiODZlOTNjZjNkYWM1ZmJmZDhiZTk4YjNiMGRlNTVhZGMwY2ZkYTFkMGY0ZDBiN2VhMjg5Zjg2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.xKwKlbfv7MvbWIO1B3769xxOC61wDAzm15hTuj98sJA" alt="" srcset=""></div>
+              <div class="portfolio-content">
+                <h3 class="portfolio-title">Piano</h3>
+                <p class="portfolio-description">
+                 Playable Piano – Immersive Virtual Piano Experience Playable Piano is a responsive and interactive keyboard simulator.
+                </p>
+                &nbsp
+                <div class="portfolio-tags">
+                  <span class="portfolio-tag">Vue.js</span>
+                  <span class="portfolio-tag">Express</span>
+                  <span class="portfolio-tag">Socket.io</span>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item" data-category="web">
+              <div class="portfolio-image"><img src="https://private-user-images.githubusercontent.com/176656629/467149317-b1c639aa-3fc6-41ba-9e46-0f19413b946c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTMwOTM1NTcsIm5iZiI6MTc1MzA5MzI1NywicGF0aCI6Ii8xNzY2NTY2MjkvNDY3MTQ5MzE3LWIxYzYzOWFhLTNmYzYtNDFiYS05ZTQ2LTBmMTk0MTNiOTQ2Yy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNzIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDcyMVQxMDIwNTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lZjJlNDEyOWYzZjI5NTliYWUwYTlhZTg4OTYxMjZiYzgwNWFjNDVhNGJlYjVlYzc0NmRjZGI2NmJhNWUwNmZhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.DPp5EX-IvuUzCd7R__RP38Xka7tpOqWlxlvznDAxwCk" alt="" srcset=""></div>
+              <div class="portfolio-content">
+                <h3 class="portfolio-title">Animated Heart</h3>
+                <p class="portfolio-description">
+                  💘Animated-Heart is a stunning 3D heart animation built using SVG, Three.js, and GSAP.
+                </p>
+                &nbsp
+                <div class="portfolio-tags">
+                  <span class="portfolio-tag">HTML</span>
+                  <span class="portfolio-tag">CSS</span>
+                  <span class="portfolio-tag">JavaScript</span>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item" data-category="web">
+              <div class="portfolio-image"><img src="https://private-user-images.githubusercontent.com/176656629/468260610-f9efa125-9125-46cf-8b6a-7a6aca59b3e5.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTMwOTMwNDAsIm5iZiI6MTc1MzA5Mjc0MCwicGF0aCI6Ii8xNzY2NTY2MjkvNDY4MjYwNjEwLWY5ZWZhMTI1LTkxMjUtNDZjZi04YjZhLTdhNmFjYTU5YjNlNS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNzIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDcyMVQxMDEyMjBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xYzhkMDlmNWFkNmE0YjI4Njc1ZDYwNWE2NzVlOGViYWNlZmVjMTQ0YTYzZDEwZTIxODNiYzY4ZTljMzc5Zjg2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.rY9xSIxc30xXsbOUIQSPRX6q1tAgC1sN47urtU89o0A" alt="" srcset=""></div>
+              <div class="portfolio-content">
+                <h3 class="portfolio-title">Headphones Background Animation</h3>
+                <p class="portfolio-description">
+                  🎧 AirPods Max – Immersive Headphone Landing Experience AirPods Max is a dynamic, responsive landing page.
+                </p>
+                <div class="portfolio-tags">
+                  <span class="portfolio-tag">HTML</span>
+                  <span class="portfolio-tag">CSS</span>
+                  <span class="portfolio-tag">JavaScript</span>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item" data-category="web">
+              <div class="portfolio-image"><img src="https://private-user-images.githubusercontent.com/176656629/468135595-3c22ddea-cd82-4a23-a9e5-67fa2ca083c4.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTMwOTMzMzYsIm5iZiI6MTc1MzA5MzAzNiwicGF0aCI6Ii8xNzY2NTY2MjkvNDY4MTM1NTk1LTNjMjJkZGVhLWNkODItNGEyMy1hOWU1LTY3ZmEyY2EwODNjNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNzIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDcyMVQxMDE3MTZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02NGI0ZTQ4MThmNDUwMTZiODBmMTk0NWY4MzI5MTkwNDljOTg3OWNlM2NlYWFkOGYyMGIyY2ViODMxNzdkMjc5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.Rf18_nHrXR33K4SFtIORr2O646-sicksBEVEHbGWir0" alt="" srcset=""></div>
+              <div class="portfolio-content">
+                <h3 class="portfolio-title">Airpodes Landing Page</h3>
+                <p class="portfolio-description">
+                  🎧 Airpods Landing Page – Interactive 3D Product Carousel Welcome to the Airpods Landing Page, an interactive and visually immersive product
+                </p>
+                <div class="portfolio-tags">
+                  <span class="portfolio-tag">HTML</span>
+                  <span class="portfolio-tag">CSS</span>
+                  <span class="portfolio-tag">JavaScript</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">
+            Let's work together on your next project
+          </p>
+          <div class="contact-content">
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <h4>Email</h4>
+                  <p>Simarpreetsaini96@gmail.com</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div>
+                  <h4>Phone</h4>
+                  <p>+91 7719668814</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <h4>Location</h4>
+                  <p>Mukerian</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-calendar"></i>
+                </div>
+                <div>
+                  <h4>Availability</h4>
+                  <p>Available for new projects</p>
+                </div>
+              </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-input" name="name" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-input" name="email" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Subject</label>
+                <input type="text" class="form-input" name="subject" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Message</label>
+                <textarea
+                  class="form-textarea"
+                  name="message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                <i class="fas fa-paper-plane"></i>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="social-links">
+          <a href="https://github.com/Simarpreetsaini" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/simarpreet-singh-57054128a/"
+            class="social-link"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/Simarpreetsaini07/"
+            class="social-link"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/preet___sabb/" class="social-link">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://api.whatsapp.com/send?phone=+917508022271"
+            class="social-link"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+        <p>&copy; 2025 Simarpreet Singh. All rights reserved. Built with ❤️</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
