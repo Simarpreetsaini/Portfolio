@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Simarpreet Singh | Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Simarpreet Singh, a passionate Full-Stack Developer and Software Engineer.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Ensure font-awesome works or use boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- tsParticles for actively connecting/disconnecting network background -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Container for Vanta.js WebGL background -->
+    <div id="bg-container"></div>
+
+    <nav class="navbar">
+        <a href="#home" class="logo">Simarpreet.</a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class='bx bx-menu'></i>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h3 class="subtitle fade-up">Hi there, I'm</h3>
+            <h1 class="title fade-up delay-1">Simarpreet Singh</h1>
+            <h2 class="role fade-up delay-2">I build <span class="typing"></span></h2>
+            <p class="description fade-up delay-3">
+                A passionate Software Engineer and Full-Stack Developer focused on building robust, scalable, and user-friendly digital experiences.
+            </p>
+            <div class="btn-group fade-up delay-4">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="Simarpreet Singh Resume.pdf" class="btn btn-secondary" target="_blank">Resume</a>
+            </div>
+            <div class="social-links fade-up delay-5">
+                <a href="https://linkedin.com/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="mailto:simarpreetsaini96@gmail.com"><i class='bx bxs-envelope'></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text glass-card fade-in">
+                    <h3>Education</h3>
+                    <div class="timeline-item">
+                        <h4>B.Tech in Computer Science and Engineering</h4>
+                        <h5>I.K. Gujral Punjab Technical University, Kapurthala</h5>
+                        <span class="date">2022 - 2026</span>
+                        <p class="grade">Grade: 9.00 SGPA</p>
+                    </div>
+                    
+                    <h3 class="mt-4">Contact Info</h3>
+                    <ul class="contact-list">
+                        <li><i class='bx bx-map'></i> Mukerian, Punjab, India</li>
+                        <li><i class='bx bx-phone'></i> +91 7719668814</li>
+                        <li><i class='bx bx-envelope'></i> simarpreetsaini96@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                
+                <div class="skill-category glass-card fade-up">
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span>JavaScript</span>
+                        <span>Python</span>
+                        <span>C++</span>
+                        <span>SQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card fade-up delay-1">
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span>React.js</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Tailwind CSS</span>
+                        <span>Bootstrap</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card fade-up delay-2">
+                    <h3>Backend & Database</h3>
+                    <div class="skill-tags">
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>JWT</span>
+                        <span>MongoDB</span>
+                        <span>MySQL</span>
+                        <span>PostgreSQL</span>
+                        <span>Firebase</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                
+                <div class="timeline-item glass-card fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Industrial Training</h3>
+                        <h4>Ryazio Technologies LLP <span>| Remote</span></h4>
+                        <span class="date">June 2024 – July 2024</span>
+                        <ul>
+                            <li>Built and optimized full-stack applications, focusing on performance and scalability.</li>
+                            <li>Enhanced skills in RESTful API development, authentication, and database management.</li>
+                            <li>Worked on real-world client projects, improving code quality and user experience.</li>
+                            <li>Strengthened problem-solving and industry-specific development practices.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item glass-card fade-up delay-1">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Web Development Internship</h3>
+                        <h4>Novem Controls <span>| Remote</span></h4>
+                        <span class="date">June 2024 – July 2024</span>
+                        <ul>
+                            <li>Developed and maintained full-stack web applications using the MERN stack.</li>
+                            <li>Designed responsive, user-friendly interfaces with React.js and Tailwind CSS.</li>
+                            <li>Implemented backend APIs with Node.js and Express, integrating MongoDB for scalable data storage.</li>
+                            <li>Collaborated with team members to deploy projects and resolve production-level issues.</li>
+                            <li>Gained hands-on experience in live project development and deployment workflows.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+
+                <div class="project-card glass-card fade-up">
+                    <div class="project-info">
+                        <h3>BRSLMS</h3>
+                        <h4>Full-Stack Learning Management System</h4>
+                        <div class="project-tech">
+                            <span>MERN Stack</span>
+                        </div>
+                        <ul>
+                            <li>Built a full-stack LMS using React, Node.js, and Express to manage students, teachers, and academic data.</li>
+                            <li>Developed RESTful APIs for attendance tracking, assignments, and academic performance management.</li>
+                            <li>Implemented role-based authentication and authorization for admin and faculty users.</li>
+                            <li>Created an admin dashboard for managing users, records, and academic workflows.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card fade-up delay-1">
+                    <div class="project-info">
+                        <h3>Quantum Key Simulation (QKS)</h3>
+                        <h4>Satellite-Based Secure Key Distribution</h4>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Tkinter</span>
+                        </div>
+                        <ul>
+                            <li>Built a Python-based QKS using the BB84 protocol with a Tkinter GUI.</li>
+                            <li>Designed interactive visualizations for photon transmission, key reconciliation, and error detection.</li>
+                            <li>Implemented QBER analysis to detect eavesdropping and trigger secure key regeneration.</li>
+                            <li>Developed a multi-tab GUI showcasing simulation results, communication visualization, and system logs.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates" class="certificates section">
+        <div class="container">
+            <h2 class="section-title">Certificates</h2>
+            <div class="cert-grid">
+                <div class="cert-card glass-card fade-up">
+                    <i class='bx bx-certification cert-icon'></i>
+                    <h3>Industrial Training Certification</h3>
+                    <p>Gained practical exposure to coding standards, scalable solutions, and industry workflows.</p>
+                </div>
+                <div class="cert-card glass-card fade-up delay-1">
+                    <i class='bx bx-award cert-icon'></i>
+                    <h3>Internship Certification</h3>
+                    <p>Enhanced problem-solving and project execution abilities in a professional environment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Simarpreet Singh. Designed & Built with passion.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
