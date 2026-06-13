@@ -18,6 +18,9 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <!-- Ensure font-awesome works or use boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Leaflet Map CSS/JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
     <!-- tsParticles for actively connecting/disconnecting network background -->
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
 </head>
@@ -32,13 +35,14 @@
     <div id="bg-container"></div>
 
     <nav class="navbar">
-        <a href="#home" class="logo">Simarpreet.</a>
+        <a href="#home" class="logo">Simarpreet</a>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="menu-icon">
             <i class='bx bx-menu'></i>
@@ -46,23 +50,30 @@
     </nav>
 
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h3 class="subtitle fade-up">Hi there, I'm</h3>
-            <h1 class="title fade-up delay-1">Simarpreet Singh</h1>
-            <h2 class="role fade-up delay-2">I build <span class="typing"></span></h2>
-            <p class="description fade-up delay-3">
-                A passionate Software Engineer and Full-Stack Developer focused on building robust, scalable, and
-                user-friendly digital experiences.
-            </p>
-            <div class="btn-group fade-up delay-4">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="Simarpreet Singh Resume.pdf" class="btn btn-secondary" target="_blank"><i
-                        class='bx bx-file-blank'></i> Resume</a>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h3 class="subtitle fade-up">Hi there, I'm</h3>
+                <h1 class="title fade-up delay-1">Simarpreet Singh</h1>
+                <h2 class="role fade-up delay-2">I build <span class="typing"></span></h2>
+                <p class="description fade-up delay-3">
+                    A passionate Software Engineer and Full-Stack Developer focused on building robust, scalable, and
+                    user-friendly digital experiences.
+                </p>
+                <div class="btn-group fade-up delay-4">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="Simarpreet Singh Resume.pdf" class="btn btn-secondary" target="_blank"><i
+                            class='bx bx-file-blank'></i> Resume</a>
+                </div>
+                <div class="social-links fade-up delay-5">
+                    <a href="https://linkedin.com/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://instagram.com/_.chobar_.07" target="_blank"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://wa.me/917719668814?text=Hey%20Simarpreet!%20Your%20work%20looks%20impressive.%20Let's%20discuss%20an%20opportunity." target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="mailto:simarpreetsaini96@gmail.com"><i class='bx bxs-envelope'></i></a>
+                </div>
             </div>
-            <div class="social-links fade-up delay-5">
-                <a href="https://linkedin.com/" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/" target="_blank"><i class='bx bxl-github'></i></a>
-                <a href="mailto:simarpreetsaini96@gmail.com"><i class='bx bxs-envelope'></i></a>
+            <div class="hero-img-container fade-up delay-2">
+                <img src="home-profile.jpg" alt="Simarpreet Singh" class="hero-img">
             </div>
         </div>
     </section>
@@ -71,13 +82,29 @@
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
+                <div class="about-img-container fade-in">
+                    <img src="profile.jpg" alt="Simarpreet Singh" class="about-img">
+                </div>
                 <div class="about-text glass-card fade-in">
+                    <h3>Who I Am</h3>
+                    <p class="about-desc">
+                        Hello! I'm Simarpreet Singh, an aspiring AI Engineer and Full-Stack Developer dedicated to
+                        leveraging technology to solve complex problems. From developing AI-powered interview platforms
+                        to building scalable MERN applications, I thrive at the intersection of artificial intelligence
+                        and software engineering. I believe in continuous learning, collaborative innovation, and
+                        creating solutions that deliver real value to users and organizations alike.
+                    </p>
+                    <div class="about-resume-btn">
+                        <a href="Simarpreet Singh Resume.pdf" class="btn btn-secondary" target="_blank"><i
+                                class='bx bx-file-blank'></i> Check my Resume</a>
+                    </div>
+
                     <h3>Education</h3>
-                    <div class="timeline-item">
+                    <div class="education-info">
                         <h4>B.Tech in Computer Science and Engineering</h4>
                         <h5>I.K. Gujral Punjab Technical University, Kapurthala</h5>
                         <span class="date">2022 - 2026</span>
-                        <p class="grade">Grade: 9.00 SGPA</p>
+                        <p class="grade">Grade: 9.00 CGPA</p>
                     </div>
 
                     <h3 class="mt-4">Contact Info</h3>
@@ -101,32 +128,64 @@
                     <div class="skill-tags">
                         <span>JavaScript</span>
                         <span>Python</span>
-                        <span>C++</span>
                         <span>SQL</span>
+                        <span>C++</span>
+                        <span>PHP</span>
                     </div>
                 </div>
 
                 <div class="skill-category glass-card fade-up delay-1">
                     <h3>Frontend</h3>
                     <div class="skill-tags">
-                        <span>React.js</span>
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>Tailwind CSS</span>
                         <span>Bootstrap</span>
+                        <span>React.js</span>
                     </div>
                 </div>
 
                 <div class="skill-category glass-card fade-up delay-2">
-                    <h3>Backend & Database</h3>
+                    <h3>Backend</h3>
                     <div class="skill-tags">
                         <span>Node.js</span>
                         <span>Express.js</span>
                         <span>JWT</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card fade-up delay-3">
+                    <h3>Database</h3>
+                    <div class="skill-tags">
                         <span>MongoDB</span>
                         <span>MySQL</span>
                         <span>PostgreSQL</span>
                         <span>Firebase</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card fade-up delay-4">
+                    <h3>AI / ML</h3>
+                    <div class="skill-tags">
+                        <span>NumPy</span>
+                        <span>Pandas</span>
+                        <span>OpenCV</span>
+                        <span>Scikit-learn</span>
+                        <span>Computer Vision</span>
+                        <span>Data Visualization</span>
+                        <span>Supervised & Unsupervised Learning</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card fade-up delay-5">
+                    <h3>Tools & Concepts</h3>
+                    <div class="skill-tags">
+                        <span>VS Code</span>
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>RESTful APIs</span>
+                        <span>OOP</span>
+                        <span>DSA</span>
                     </div>
                 </div>
 
@@ -140,6 +199,26 @@
             <div class="timeline">
 
                 <div class="timeline-item glass-card fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Artificial Intelligence & Computer Vision Intern</h3>
+                        <h4>CDAC (Centre for Development of Advanced Computing) <span>| Mohali</span></h4>
+                        <span class="date">January 2026 – July 2026</span>
+                        <ul>
+                            <li>Completed a 6-month internship focused on Artificial Intelligence and Computer Vision
+                                using Python.</li>
+                            <li>Implemented data preprocessing and analysis using Python, NumPy, Pandas, and Matplotlib.
+                            </li>
+                            <li>Applied OpenCV techniques for image processing, filtering, and feature extraction tasks.
+                            </li>
+                            <li>Gained practical exposure to supervised and unsupervised machine learning concepts.</li>
+                            <li>Worked on dataset preparation, model evaluation, and performance assessment workflows.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item glass-card fade-up delay-1">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <h3>Industrial Training</h3>
@@ -156,7 +235,7 @@
                     </div>
                 </div>
 
-                <div class="timeline-item glass-card fade-up delay-1">
+                <div class="timeline-item glass-card fade-up delay-2">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <h3>Web Development Internship</h3>
@@ -185,24 +264,52 @@
 
                 <div class="project-card glass-card fade-up">
                     <div class="project-info">
+                        <h3>Advanced AI Interview System</h3>
+                        <h4>AI-Powered Interview Platform</h4>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>SQLAlchemy</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <ul class="emoji-list">
+                            <li>🤖 Automated resume parsing and AI-based interview question generation.</li>
+                            <li>🎤 Integrated Whisper-powered speech transcription for interview analysis.</li>
+                            <li>😊 Applied facial emotion recognition to assess candidate engagement.</li>
+                            <li>🔒 Implemented face verification and tab-switch detection for assessment integrity.</li>
+                            <li>📹 Recorded interview sessions and generated detailed transcripts for review.</li>
+                            <li>📊 Built an admin dashboard for candidate management, performance analytics, and interview insights.</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://ai-interview-system-chi-murex.vercel.app/" target="_blank" class="project-link-btn"><i class='bx bx-link-external'></i> Live Demo</a>
+                            <a href="https://github.com/Simarpreetsaini/AI_interview_system" target="_blank" class="project-link-btn"><i class='bx bxl-github'></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card fade-up delay-1">
+                    <div class="project-info">
                         <h3>BRSLMS</h3>
                         <h4>Full-Stack Learning Management System</h4>
                         <div class="project-tech">
                             <span>MERN Stack</span>
                         </div>
-                        <ul>
-                            <li>Built a full-stack LMS using React, Node.js, and Express to manage students, teachers,
-                                and academic data.</li>
-                            <li>Developed RESTful APIs for attendance tracking, assignments, and academic performance
-                                management.</li>
-                            <li>Implemented role-based authentication and authorization for admin and faculty users.
-                            </li>
-                            <li>Created an admin dashboard for managing users, records, and academic workflows.</li>
+                        <ul class="emoji-list">
+                            <li>📚 Developed a centralized LMS to manage students, faculty, courses, and academic records.</li>
+                            <li>📝 Built RESTful APIs for attendance tracking and assignment management.</li>
+                            <li>📈 Implemented academic performance monitoring and reporting features.</li>
+                            <li>🔐 Integrated role-based authentication and authorization using secure access controls.</li>
+                            <li>👨🏫 Designed dedicated modules for administrators, faculty members, and students.</li>
+                            <li>📊 Created an interactive admin dashboard to streamline academic workflows and user management.</li>
                         </ul>
+                        <div class="project-links">
+                            <a href="https://learning-management-system-ashen-nine.vercel.app/" target="_blank" class="project-link-btn"><i class='bx bx-link-external'></i> Live Demo</a>
+                            <a href="https://github.com/Simarpreetsaini/Learning-management-system" target="_blank" class="project-link-btn"><i class='bx bxl-github'></i> Code</a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="project-card glass-card fade-up delay-1">
+                <div class="project-card glass-card fade-up delay-2">
                     <div class="project-info">
                         <h3>Quantum Key Simulation (QKS)</h3>
                         <h4>Satellite-Based Secure Key Distribution</h4>
@@ -210,15 +317,18 @@
                             <span>Python</span>
                             <span>Tkinter</span>
                         </div>
-                        <ul>
-                            <li>Built a Python-based QKS using the BB84 protocol with a Tkinter GUI.</li>
-                            <li>Designed interactive visualizations for photon transmission, key reconciliation, and
-                                error detection.</li>
-                            <li>Implemented QBER analysis to detect eavesdropping and trigger secure key regeneration.
-                            </li>
-                            <li>Developed a multi-tab GUI showcasing simulation results, communication visualization,
-                                and system logs.</li>
+                        <ul class="emoji-list">
+                            <li>🔑 Simulated secure quantum key exchange using the BB84 protocol.</li>
+                            <li>🐍 Developed the application in Python with an interactive Tkinter GUI.</li>
+                            <li>📡 Visualized photon transmission and key reconciliation processes.</li>
+                            <li>🛡️ Implemented QBER analysis to detect potential eavesdropping attempts.</li>
+                            <li>♻️ Enabled automatic secure key regeneration upon anomaly detection.</li>
+                            <li>🖥️ Designed a multi-tab dashboard for simulation results, communication flow, and system logs.</li>
                         </ul>
+                        <div class="project-links">
+                            <a href="https://quantum-key-simulation.vercel.app/" target="_blank" class="project-link-btn"><i class='bx bx-link-external'></i> Live Demo</a>
+                            <a href="https://github.com/Simarpreetsaini/Quantum_Key_Simulation" target="_blank" class="project-link-btn"><i class='bx bxl-github'></i> Code</a>
+                        </div>
                     </div>
                 </div>
 
@@ -231,15 +341,82 @@
             <h2 class="section-title">Certificates</h2>
             <div class="cert-grid">
                 <div class="cert-card glass-card fade-up">
-                    <i class='bx bx-certification cert-icon'></i>
+                    <i class='bx bx-award cert-icon'></i>
                     <h3>Industrial Training Certification</h3>
                     <p>Gained practical exposure to coding standards, scalable solutions, and industry workflows.</p>
+                    <a href="industrial-training.html" class="cert-view-btn"><i class='bx bx-show'></i> View</a>
                 </div>
                 <div class="cert-card glass-card fade-up delay-1">
                     <i class='bx bx-award cert-icon'></i>
                     <h3>Internship Certification</h3>
                     <p>Enhanced problem-solving and project execution abilities in a professional environment.</p>
+                    <a href="internship-certification.html" class="cert-view-btn"><i class='bx bx-show'></i> View</a>
                 </div>
+                <div class="cert-card glass-card fade-up delay-2">
+                    <i class='bx bx-medal cert-icon'></i>
+                    <h3>Achievements</h3>
+                    <p>Showcasing milestones in discipline, leadership, physical endurance, and competitive excellence through National Cadet Corps and Martial Arts certifications.</p>
+                    <a href="achievements.html" class="cert-view-btn"><i class='bx bx-show'></i> View</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+
+                <!-- Map Container (Left) -->
+                <div class="contact-map-wrapper glass-card fade-up">
+                    <div id="map"></div>
+                    <!-- Custom D-Pad Pan Controls -->
+                    <div class="map-controls">
+                        <div></div>
+                        <button type="button" class="map-btn map-btn-up" onclick="panMap('up')" title="Pan Up"><i
+                                class='bx bx-chevron-up'></i></button>
+                        <div></div>
+
+                        <button type="button" class="map-btn map-btn-left" onclick="panMap('left')" title="Pan Left"><i
+                                class='bx bx-chevron-left'></i></button>
+                        <div class="map-controls-center"></div>
+                        <button type="button" class="map-btn map-btn-right" onclick="panMap('right')"
+                            title="Pan Right"><i class='bx bx-chevron-right'></i></button>
+
+                        <div></div>
+                        <button type="button" class="map-btn map-btn-down" onclick="panMap('down')" title="Pan Down"><i
+                                class='bx bx-chevron-down'></i></button>
+                        <div></div>
+                    </div>
+                </div>
+
+                <!-- Contact Form (Right) -->
+                <div class="contact-form-container glass-card fade-up">
+                    <form action="https://formsubmit.co/simarpreetsaini96@gmail.com" method="POST" class="contact-form">
+                        <!-- FormSubmit Configurations -->
+                        <input type="hidden" name="_subject" value="New Portfolio Message!">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" required rows="5"
+                                placeholder="Write your thoughts here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <i class='bx bx-send'></i> Send Message
+                        </button>
+                    </form>
+                </div>
+
             </div>
         </div>
     </section>
@@ -249,6 +426,11 @@
             <p>&copy; 2026 Simarpreet Singh. Designed & Built with passion.</p>
         </div>
     </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="scroll-to-top-btn" title="Go to top">
+        <i class='bx bx-chevron-up'></i>
+    </button>
 
     <script src="script.js"></script>
 </body>

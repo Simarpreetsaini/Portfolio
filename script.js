@@ -37,7 +37,7 @@ window.addEventListener('scroll', () => {
 });
 
 // Typing Effect for Hero Section
-const roles = ["Full-Stack Applications.", "RESTful APIs.", "Responsive Interfaces.", "Secure Systems."];
+const roles = ["Full-Stack Applications.", "AI & Computer Vision Models.", "RESTful APIs.", "Scalable Systems."];
 let roleIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -185,7 +185,7 @@ window.addEventListener('mousemove', function(e) {
 });
 
 // Hover effect for links and buttons
-const interactables = document.querySelectorAll('a, .btn, .menu-icon');
+const interactables = document.querySelectorAll('a, .btn, .menu-icon, .map-btn, .scroll-to-top-btn');
 interactables.forEach(el => {
     el.addEventListener('mouseenter', () => {
         cursorOutline.style.width = '50px';
@@ -198,4 +198,75 @@ interactables.forEach(el => {
         cursorOutline.style.height = '30px';
         cursorOutline.style.backgroundColor = 'transparent';
     });
+});
+
+// Scroll to Top Button Logic
+const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+if (scrollToTopBtn) {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            scrollToTopBtn.classList.add('show');
+        } else {
+            scrollToTopBtn.classList.remove('show');
+        }
+    });
+
+    scrollToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
+// Initialize Leaflet Map
+let map;
+
+function initMap() {
+    const mapContainer = document.getElementById('map');
+    if (!mapContainer) return;
+    
+    // Mukerian coordinates: [31.9507, 75.6192]
+    const mukerianCoords = [31.9507, 75.6192];
+    
+    // Initialize map
+    map = L.map('map', {
+        zoomControl: true,
+        scrollWheelZoom: false,
+        attributionControl: false
+    }).setView(mukerianCoords, 13);
+    
+    // Add OpenStreetMap tile layer
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+    
+    // Add marker
+    const marker = L.marker(mukerianCoords).addTo(map);
+    marker.bindPopup("<b>Mukerian</b><br>Punjab, India").openPopup();
+}
+
+// Global pan function linked to control buttons
+window.panMap = function(direction) {
+    if (!map) return;
+    const offset = 120; // pan pixel offset
+    switch(direction) {
+        case 'up':
+            map.panBy([0, -offset]);
+            break;
+        case 'down':
+            map.panBy([0, offset]);
+            break;
+        case 'left':
+            map.panBy([-offset, 0]);
+            break;
+        case 'right':
+            map.panBy([offset, 0]);
+            break;
+    }
+};
+
+// Auto-run map initialization on page load
+document.addEventListener('DOMContentLoaded', () => {
+    initMap();
 });

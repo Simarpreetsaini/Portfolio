@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Industrial Training Certification – Full-Stack Development</title>
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23818cf8'/><text x='50%25' y='50%25' font-family='sans-serif' font-weight='bold' font-size='65' fill='%23ffffff' text-anchor='middle' dy='.35em'>S</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .cert-detail-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: clamp(2rem, 5vh, 4rem) clamp(1rem, 5vw, 2rem);
+            position: relative;
+            z-index: 1;
+        }
+        .cert-detail-card {
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+            padding: clamp(2rem, 5vw, 4rem);
+        }
+        .cert-detail-title {
+            font-size: clamp(1.6rem, 4vw, 2.2rem);
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #fff, #a0a0a0);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .cert-meta-info {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+            flex-wrap: nowrap;
+        }
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.04);
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            border: 1px solid var(--glass-border);
+            backdrop-filter: blur(4px);
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+        .meta-item:hover {
+            background: rgba(129, 140, 248, 0.08);
+            border-color: rgba(129, 140, 248, 0.3);
+            transform: translateY(-2px);
+        }
+        @media (max-width: 650px) {
+            .cert-meta-info {
+                flex-wrap: wrap;
+            }
+        }
+        .meta-item i {
+            color: var(--accent-color);
+            font-size: 1.2rem;
+        }
+        .meta-label {
+            color: var(--text-secondary);
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+        .meta-value {
+            color: var(--text-primary);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        .cert-detail-desc {
+            color: var(--text-secondary);
+            font-size: clamp(0.95rem, 2vw, 1.1rem);
+            line-height: 1.8;
+            margin-bottom: 3rem;
+            text-align: justify;
+        }
+        .cert-btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .back-btn {
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            color: var(--text-primary);
+        }
+        .back-btn:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 0.4);
+            color: #fff;
+            transform: translateY(-3px) scale(1.02);
+        }
+    </style>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Container for Particles Background -->
+    <div id="bg-container"></div>
+
+    <div class="cert-detail-container">
+        <div class="cert-detail-card glass-card">
+            <i class='bx bx-award cert-icon' style="font-size: 4.5rem; margin-bottom: 1.5rem;"></i>
+            <h1 class="cert-detail-title">Industrial Training Certification – Full-Stack Development</h1>
+            
+            <div class="cert-meta-info">
+                <div class="meta-item">
+                    <i class='bx bx-buildings'></i>
+                    <span class="meta-label">Organization:</span>
+                    <span class="meta-value">Ryazio Technologies LLP</span>
+                </div>
+                <div class="meta-item">
+                    <i class='bx bx-calendar'></i>
+                    <span class="meta-label">Duration:</span>
+                    <span class="meta-value">June 2024 – July 2024</span>
+                </div>
+            </div>
+
+            <p class="cert-detail-desc">
+                Successfully completed an Industrial Training program at Ryazio Technologies LLP, gaining practical exposure to full-stack application development and industry-oriented software engineering practices. During the training, I enhanced my understanding of RESTful API development, authentication mechanisms, database management, and scalable application architecture. Through hands-on learning and real-world project exposure, I strengthened my problem-solving abilities, technical expertise, and collaborative development skills while adapting to professional workflows and coding standards followed in the software industry.
+            </p>
+
+            <div class="cert-btn-group">
+                <a href="index.html#certificates" class="btn back-btn"><i class='bx bx-arrow-back'></i> Back to Portfolio</a>
+                <a href="Simarpreet Singh Industrial Training  Certifcate.pdf" target="_blank" class="btn btn-primary"><i class='bx bx-file-blank'></i> View Certificate PDF</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- tsParticles & Cursor trailing logic -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+    <script>
+        // Particles Background
+        tsParticles.load("bg-container", {
+            fullScreen: { enable: false },
+            fpsLimit: 60,
+            particles: {
+                number: { value: 60, density: { enable: true, value_area: 800 } },
+                color: { value: "#818cf8" },
+                links: {
+                    enable: true,
+                    color: "#6366f1",
+                    distance: 150,
+                    opacity: 0.35,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 1.2,
+                    direction: "none",
+                    random: false,
+                    straight: false,
+                    outModes: { default: "bounce" }
+                },
+                size: { value: 3 },
+                opacity: { value: 0.45 }
+            },
+            background: { color: "#000000" }
+        });
+
+        // Custom Cursor Logic
+        const cursorDot = document.querySelector('[data-cursor-dot]');
+        const cursorOutline = document.querySelector('[data-cursor-outline]');
+
+        window.addEventListener('mousemove', function(e) {
+            const posX = e.clientX;
+            const posY = e.clientY;
+
+            cursorDot.style.left = `${posX}px`;
+            cursorDot.style.top = `${posY}px`;
+
+            cursorOutline.animate({
+                left: `${posX}px`,
+                top: `${posY}px`
+            }, { duration: 500, fill: "forwards" });
+        });
+
+        // Hover effect for links and buttons
+        const interactables = document.querySelectorAll('a, .btn, .meta-item');
+        interactables.forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                cursorOutline.style.width = '50px';
+                cursorOutline.style.height = '50px';
+                cursorOutline.style.backgroundColor = 'rgba(129, 140, 248, 0.1)';
+            });
+            
+            el.addEventListener('mouseleave', () => {
+                cursorOutline.style.width = '30px';
+                cursorOutline.style.height = '30px';
+                cursorOutline.style.backgroundColor = 'transparent';
+            });
+        });
+    </script>
+</body>
+</html>
