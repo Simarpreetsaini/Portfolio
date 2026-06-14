@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Industrial Training Certification – Full-Stack Development</title>
-    <link rel="icon" type="image/svg+xml"
-        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23818cf8'/><text x='50%25' y='50%25' font-family='sans-serif' font-weight='bold' font-size='65' fill='%23ffffff' text-anchor='middle' dy='.35em'>S</text></svg>">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -104,6 +104,66 @@
             color: #fff;
             transform: translateY(-3px) scale(1.02);
         }
+        /* Certificate Thumbnail */
+        .cert-thumbnail-wrapper {
+            margin: 0 auto 2.5rem auto;
+            max-width: 680px;
+            width: 100%;
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 40px rgba(99, 102, 241, 0.25), 0 2px 12px rgba(0,0,0,0.5);
+            border: 1.5px solid rgba(129, 140, 248, 0.25);
+            transition: box-shadow 0.35s ease, transform 0.35s ease;
+            cursor: pointer;
+        }
+        .cert-thumbnail-wrapper:hover {
+            box-shadow: 0 16px 56px rgba(99, 102, 241, 0.45), 0 4px 20px rgba(0,0,0,0.6);
+            transform: translateY(-4px) scale(1.012);
+        }
+        .cert-thumbnail-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 16px;
+            transition: transform 0.45s ease;
+        }
+        .cert-thumbnail-wrapper:hover img {
+            transform: scale(1.03);
+        }
+        .cert-thumbnail-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 55%);
+            border-radius: 16px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding-bottom: 1.2rem;
+            opacity: 0;
+            transition: opacity 0.35s ease;
+        }
+        .cert-thumbnail-wrapper:hover .cert-thumbnail-overlay {
+            opacity: 1;
+        }
+        .cert-thumbnail-overlay span {
+            color: #fff;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: rgba(99,102,241,0.75);
+            padding: 0.45rem 1.1rem;
+            border-radius: 30px;
+            backdrop-filter: blur(6px);
+        }
+        @media (max-width: 600px) {
+            .cert-thumbnail-wrapper {
+                max-width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -131,6 +191,14 @@
                     <span class="meta-value">June 2024 – July 2024</span>
                 </div>
             </div>
+
+            <!-- Certificate Thumbnail Preview -->
+            <a href="Simarpreet Singh Industrial Training  Certifcate.pdf" target="_blank" class="cert-thumbnail-wrapper" title="Click to view certificate PDF">
+                <img src="industrial traing thumbnail.png" alt="Industrial Training Certificate Preview">
+                <div class="cert-thumbnail-overlay">
+                    <span><i class='bx bx-file-blank'></i> View Certificate PDF</span>
+                </div>
+            </a>
 
             <p class="cert-detail-desc">
                 Successfully completed an Industrial Training program at Ryazio Technologies LLP, gaining practical exposure to full-stack application development and industry-oriented software engineering practices. During the training, I enhanced my understanding of RESTful API development, authentication mechanisms, database management, and scalable application architecture. Through hands-on learning and real-world project exposure, I strengthened my problem-solving abilities, technical expertise, and collaborative development skills while adapting to professional workflows and coding standards followed in the software industry.
